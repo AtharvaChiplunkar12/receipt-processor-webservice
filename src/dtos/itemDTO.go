@@ -1,6 +1,6 @@
 package dtos
 
 type ItemDTO struct {
-    ShortDescription string `json:"shortDescription" validate:"required"`
-    Price           float64 `json:"price" validate:"required,floatString"`
+	ShortDescription string `json:"shortDescription" validate:"required"`
+	Price            string `json:"price" validate:"required,floatString"`
 }

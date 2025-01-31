@@ -13,9 +13,9 @@ import (
 // In-memory store for receipts
 var receiptStore = make(map[string]int)
 
-func receiptProcessing(receipt models.Receipt) string {
+func ReceiptProcessing(receipt models.Receipt) string {
 	receiptID := uuid.New().String()
-	points := calculatePoints(receipt)
+	points := CalculatePoints(receipt)
 	receiptStore[receiptID] = points
 
 	return receiptID
@@ -26,7 +26,7 @@ func GetPointsFromStore(id string) (int, bool) {
 	return points, exists
 }
 
-func calculatePoints(receipt models.Receipt) int {
+func CalculatePoints(receipt models.Receipt) int {
 	points := 0
 
 	points += countAlphanumeric(receipt.Retailer)
