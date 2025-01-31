@@ -1,6 +1,8 @@
 package models
 
+// Reqired during database interaction
+
 type Item struct {
 	ShortDescription string `json:"short_description"`
-	Price            int    `json:"price"`
+	Price            float64    `json:"price"`
 }

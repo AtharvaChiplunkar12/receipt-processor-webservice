@@ -1,5 +1,6 @@
 package models
 
+
 type ReceiptResponse struct {
 	ID string `json:"id"`
 }
