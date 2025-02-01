@@ -1,0 +1,26 @@
+# Ignore Go build artifacts
+*.exe
+*.out
+*.o
+*.test
+*.a
+*.so
+bin/
+build/
+
+# Ignore dependency directories
+vendor/
+node_modules/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+*.cache
+.env
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.iml
+
