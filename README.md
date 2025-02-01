@@ -96,7 +96,6 @@ receipt-processing/
 ├── models/             # Data models and response structures  
 ├── processes/          # Business logic for receipt processing
 ├── routing/            # API route definitions and setup 
-├── tests/               # Unit and integration tests  
 ├── main.go             # Application entry point
 ├── go.mod              # Go modules file (dependencies and module path)  
 ├── go.sum              # Dependencies checksum file 
@@ -133,16 +132,6 @@ curl -X GET "http://localhost:8080/receipts/a1b2c3d4/points"
 3. Set **Body** -> **Raw** -> **JSON** and paste the request JSON.
 4. Send the request and note the returned `id`.
 5. Create a **GET** request to `http://localhost:8080/receipts/{id}/points` and send.
-
----
-
-## **Running Tests**
-Unit tests are located in the `test/` directories.
-Run tests using:
-```sh
-go test ./test...
-```
-This will run all test cases for the application.
 
 ---
 
